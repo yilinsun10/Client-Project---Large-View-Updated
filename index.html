@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMSI Career Development Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="bg-umsi-gray text-umsi-darkGray font-sans antialiased">
+    <!-- Header with sticky navigation -->
+    <header class="bg-umsi-blue text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" 
+                         class="w-20 h-auto object-contain">
+                    <h1 class="text-xl md:text-2xl font-bold hidden md:block">UMSI Career Hub</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex gap-2">
+                        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                        <li><a href="resume.html" class="nav-link">Resumes</a></li>
+                        <li><a href="networking.html" class="nav-link">Networking</a></li>
+                        <li><a href="internship_search.html" class="nav-link">Internship Search</a></li>
+                    </ul>
+                </nav>
+                
+                 <!-- Mobile menu button -->
+                 <button id="menu-toggle" class="md:hidden  focus:outline-none" aria-label="Open menu">
+                    <i class="fa fa-bars text-2xl">Open menu</i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="md:hidden hidden mt-4 pb-2 animate-fade-in">
+                <ul class="flex flex-col gap-2">
+                    <li><a href="index.html" class="nav-link active block w-full text-center" aria-current="page">Home</a></li>
+                    <li><a href="resume.html" class="nav-link block w-full text-center">Resumes</a></li>
+                    <li><a href="networking.html" class="nav-link block w-full text-center">Networking</a></li>
+                    <li><a href="internship_search.html" class="nav-link block w-full text-center">Internship Search</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Hero banner -->
+        <div class="bg-gradient-to-r from-umsi-blue to-[#002244] py-10 md:py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-shadow animate-slide-up">
+                    Welcome to the UMSI Career Development Resource Hub
+                </h2>
+                <p class="max-w-2xl mx-auto text-white/90 text-lg animate-slide-up" style="animation-delay: 0.1s">
+                    Your central destination for career success during your time at UMSI and beyond
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <!-- Introduction Section -->
+        <section class="mb-12 md:mb-16 animate-fade-in">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-6">Your Central Hub for Career Success at UMSI</h2>
+                <p class="text-lg mb-6 leading-relaxed">
+                    Ready to take the next step toward your future career? The UMSI Career Development Resource Hub is your one-stop shop for trusted guidance, practical tools, and the latest information to help you thrive as a student and job-seeker.
+                </p>
+                
+                <!-- Video with responsive container -->
+                <div class="rounded-xl overflow-hidden shadow-lg mb-6">
+                    <iframe width="100%" height="400" 
+                            src="https://www.youtube.com/embed/GSjGeDYJ5Nk?si=qhxJPRTIT___x8hG" 
+                            title="Career Development Video" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen class="w-full h-full"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resource Benefits Section -->
+        <section class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.1s">
+            <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-8 text-center">Why Use This Resource?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Resource Card 1 -->
+                <div class="bg-white rounded-xl shadow p-6 card-hover">
+                    <div class="icon-circle">
+                        <i class="fa fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-umsi-blue">Everything in One Place</h3>
+                    <p>Quickly access the resources you need for resumes, interviews, networking, mentorship, and more.</p>
+                </div>
+                
+                <!-- Resource Card 2 -->
+                <div class="bg-white rounded-xl shadow p-6 card-hover">
+                    <div class="icon-circle">
+                        <i class="fa fa-map-signs"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-umsi-blue">Student-Focused Navigation</h3>
+                    <p>Browse by topic or question, with key areas highlighted for quick start.</p>
+                </div>
+                
+                <!-- Resource Card 3 -->
+                <div class="bg-white rounded-xl shadow p-6 card-hover">
+                    <div class="icon-circle">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-umsi-blue">Guidance Backed by Experts</h3>
+                    <p>All resources are recommended and reviewed by the UMSI Career Development Office.</p>
+                </div>
+                
+                <!-- Resource Card 4 -->
+                <div class="bg-white rounded-xl shadow p-6 card-hover">
+                    <div class="icon-circle">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-umsi-blue">Always Accessible</h3>
+                    <p>Visit anytime, from any device. We're committed to meeting the accessibility needs of all students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Here Section -->
+        <section class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.2s">
+            <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-8">Start Here</h2>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Left Column -->
+                    <div class="p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-gray-200">
+                        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student with UMSI Backpack" 
+                             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-md mb-6">
+                        
+                             <div class="flex items-center gap-3 mb-4">
+                              <div class="small-icon-circle">
+                                  <i class="fa fa-briefcase"></i>
+                              </div>
+                              <h3 class="text-xl font-semibold text-umsi-blue">Explore Career Resources</h3>
+
+                          </div>
+                        <ul class="space-y-3">
+                            <li><a href="resume.html" class="resource-link">
+                                <i class="fa fa-file-text-o"></i> Resumes
+                            </a></li>
+                            <li><a href="networking.html" class="resource-link">
+                                <i class="fa fa-handshake-o"></i> Networking & Connections
+                            </a></li>
+                            <li><a href="#" class="resource-link">
+                                <i class="fa fa-search"></i> Career Exploration
+                            </a></li>
+                            <li><a href="#" class="resource-link">
+                                <i class="fa fa-user"></i> Talk to a Career Coach
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Right Column -->
+                    <div class="p-6 md:p-8">
+                      <div class="flex items-center gap-3 mb-6">
+                        <div class="small-icon-circle">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-umsi-blue">Most Popular Resources</h3>
+                    </div>
+                        
+                        <ul class="space-y-4">
+                            <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                                <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit" 
+                                   target="_blank" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                                    <span>UMSI Resume Guide</span>
+                                    <i class="fa fa-external-link text-sm"></i>
+                                </a>
+                                <p class="text-gray-600 text-sm mt-1">Comprehensive guide to crafting the perfect resume</p>
+                            </li>
+                            
+                            <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                                <a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" 
+                                   target="_blank" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                                    <span>Attend a Career Event</span>
+                                    <i class="fa fa-external-link text-sm"></i>
+                                </a>
+                                <p class="text-gray-600 text-sm mt-1">Upcoming networking and career fairs</p>
+                            </li>
+                            
+                            <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                                <a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit" 
+                                   target="_blank" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                                    <span>Networking Tips</span>
+                                    <i class="fa fa-external-link text-sm"></i>
+                                </a>
+                                <p class="text-gray-600 text-sm mt-1">Strategies for building professional connections</p>
+                            </li>
+                            
+                            <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                                <a href="https://docs.google.com/presentation/d/15n-XqsFEntdbkZz89K-ohf7Or1NnCt5CQNDG-6fh2a0/edit" 
+                                   target="_blank" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                                    <span>Interview Preparation</span>
+                                    <i class="fa fa-external-link text-sm"></i>
+                                </a>
+                                <p class="text-gray-600 text-sm mt-1">Ace your next interview with these preparation tips</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="mb-8 animate-fade-in" style="animation-delay: 0.3s">
+            <div class="bg-gradient-to-r from-umsi-blue to-[#002244] rounded-xl shadow-md p-6 md:p-8 text-white">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Connect with the UMSI Career Development Office</h2>
+                <p class="text-lg mb-6 leading-relaxed">
+                    The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. 
+                    <a href="https://umich.instructure.com/courses/137916" target="_blank" 
+                       class="text-umsi-maize hover:underline font-medium">Visit the CDO website</a> or 
+                    <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank" 
+                       class="text-umsi-maize hover:underline font-medium">find us on campus</a> to learn more, 
+                    schedule a coaching session, or just say hello.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="inline-flex items-center gap-2 bg-umsi-maize text-umsi-blue px-6 py-3 rounded-lg font-semibold 
+                                      hover:bg-white transition-colors duration-300">
+                        <i class="fa fa-calendar"></i> Schedule an Appointment
+                    </a>
+                    <a href="#" class="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold 
+                                      hover:bg-white/10 transition-colors duration-300">
+                        <i class="fa fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-umsi-blue text-white py-8" aria-label="UMSI Career Development Footer">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <p class="mb-2">University of Michigan School of Information</p>
+                    <p class="text-sm text-white/80">432 South State Street, Ann Arbor, MI 48109-1285</p>
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/umsicdo/" class="text-white hover:text-umsi-maize transition-colors" aria-label="Facebook">
+                        <i class="fa fa-facebook-square text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/UMSICareers" class="text-white hover:text-umsi-maize transition-colors" aria-label="Twitter">
+                        <i class="fa fa-twitter-square text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" class="text-white hover:text-umsi-maize transition-colors" aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+        
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> UMSI Career Development Office | <a href="https://umich.instructure.com/courses/137916" class="text-umsi-maize hover:underline">UMSI Career Development Office</a></p>
+        </div>
+       
+        </div>
+    </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Mobile menu toggle functionality
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for fade-in elements
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('animate-fade-in');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

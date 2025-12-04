@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html5reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Networking & Connections</title>
+</head>
+<body class="bg-umsi-gray text-umsi-darkGray font-sans antialiased">
+    
+    <header class="bg-umsi-blue text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" 
+                         class="w-20 h-auto object-contain" >
+                    <h1 class="text-xl md:text-2xl font-bold hidden md:block">UMSI Career Hub</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex gap-2">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="resume.html" class="nav-link">Resumes</a></li>
+                        <li><a href="networking.html" class="nav-link active" aria-current="page">Networking</a></li>
+                        <li><a href="internship_search.html" class="nav-link">Internship Search</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <button id="menu-toggle" class="md:hidden  focus:outline-none" aria-label="Open menu">
+    <i class="fa fa-bars text-2xl">Open menu</i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="md:hidden hidden mt-4 pb-2 animate-fade-in">
+                <ul class="flex flex-col gap-2">
+                    <li><a href="index.html" class="nav-link block w-full text-center">Home</a></li>
+                    <li><a href="resume.html" class="nav-link block w-full text-center">Resumes</a></li>
+                    <li><a href="networking.html" class="nav-link active block w-full text-center" aria-current="page">Networking</a></li>
+                    <li><a href="internship_search.html" class="nav-link block w-full text-center">Internship Search</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Hero banner -->
+        <div class="bg-gradient-to-r from-umsi-blue to-[#002244] py-10 md:py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-shadow animate-slide-up">
+                    Networking & Connections
+                </h2>
+                <p class="max-w-2xl mx-auto text-white/90 text-lg animate-slide-up" style="animation-delay: 0.1s">
+                    Build meaningful professional relationships that drive your career forward
+                </p>
+            </div>
+        </div>
+    </header>
+     
+    <main id="main" tabindex="-1" class="container mx-auto px-4 py-8 md:py-12">
+        <section class="mb-12 md:mb-16 animate-fade-in">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-6">Make Connections that Move You Forward</h2>
+                <p class="text-lg mb-6 leading-relaxed">
+                    Networking is about building genuine relationships that can support your career growth. Whether you’re exploring fields, seeking advice, or looking for opportunities, connecting with others can open doors and provide valuable insights.
+                </p>
+                <p class="text-lg mb-6 leading-relaxed">
+                    Not sure where to begin? Pick one role you’re curious about, find 3–5 alumni or professionals in that area,
+                    send two short messages, and schedule one 15-minute chat this week.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Need feedback on your approach? You can always
+                    <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
+                       target="_blank" rel="noopener noreferrer" class="text-umsi-blue hover:text-[#002244] font-medium">meet with a CDO Career Coach</a>.
+                </p>
+            </div>
+        </section>
+
+        <div class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.1s">
+            <img src="images/UMSI_MastersOrientation_081825_06.jpg" alt="Master students participating in networking activities." 
+                 class="w-full h-auto rounded-xl shadow-md object-cover">
+        </div>
+
+        <section class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.2s">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-6">Networking Made Easy: Steps to Success</h2>
+                <ol class="list-none space-y-4 pl-2">
+                    <li class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-umsi-blue text-white flex items-center justify-center font-bold mt-0.5">1</div>
+                        <div>
+                            <strong class="text-umsi-blue">Choose a focus:</strong> roles or teams you want to learn about.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-umsi-blue text-white flex items-center justify-center font-bold mt-0.5">2</div>
+                        <div>
+                            <strong class="text-umsi-blue">Find people:</strong> alumni, speakers, or professionals connected to your focus.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-umsi-blue text-white flex items-center justify-center font-bold mt-0.5">3</div>
+                        <div>
+                            <strong class="text-umsi-blue">Send short outreach:</strong> under ~100 words with a clear, small ask (15 minutes).
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-umsi-blue text-white flex items-center justify-center font-bold mt-0.5">4</div>
+                        <div>
+                            <strong class="text-umsi-blue">Have the conversation:</strong> prepare 3–4 questions; share a brief story about your interests.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-umsi-blue text-white flex items-center justify-center font-bold mt-0.5">5</div>
+                        <div>
+                            <strong class="text-umsi-blue">Follow up:</strong> send a thank-you within 24–48 hours and note next steps.
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.3s">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-6">Networking Resources</h2>
+                <ul class="space-y-6">
+                    <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                        <a href="https://docs.google.com/presentation/d/1R6azi49e7vd3ubRtdm33qG6Aq3bLBDBue7blM6pv49I/edit?slide=id.g26478bd383d_0_6#slide=id.g26478bd383d_0_6"
+                           target="_blank" rel="noopener noreferrer" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                            <span>Intro to Making Connections (slides)</span>
+                            <i class="fa fa-external-link text-sm"></i>
+                        </a>
+                        <p class="text-gray-600 mt-1">A quick overview of how to start and what to say.</p>
+                    </li>
+                    <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                        <a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?tab=t.0"
+                           target="_blank" rel="noopener noreferrer" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                            <span>Networking Outreach Email Examples</span>
+                            <i class="fa fa-external-link text-sm"></i>
+                        </a>
+                        <p class="text-gray-600 mt-1">Short, customizable templates you can send today.</p>
+                    </li>
+                    <li class="border-l-4 border-umsi-blue pl-4 py-2">
+                        <a href="https://docs.google.com/presentation/d/1QR0UA8V4d_hjHuayVbzF5_bx8d_8m3Ohvx9e5SiBodg/edit"
+                           target="_blank" rel="noopener noreferrer" class="text-umsi-blue hover:text-[#002244] font-medium flex items-center gap-2">
+                            <span>Informational Interviews: TIARA Method (slides)</span>
+                            <i class="fa fa-external-link text-sm"></i>
+                        </a>
+                        <p class="text-gray-600 mt-1">A simple framework for great questions and conversations.</p>
+                    </li>
+                </ul>
+                <p class="mt-6 text-lg">
+                    Prefer 1:1 help? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
+                       target="_blank" rel="noopener noreferrer" class="text-umsi-blue hover:text-[#002244] font-medium">Book a quick coaching appointment</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 md:mb-16 animate-fade-in" style="animation-delay: 0.4s">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-umsi-blue mb-6">Networking FAQ</h2>
+                <ul class="space-y-6">
+                    <li>
+                        <strong class="text-umsi-blue text-lg block mb-2">What do I say in the first message?</strong>
+                        <p>Keep it brief: who you are, why you’re reaching out, and a small ask (15 minutes, 2 quick questions).</p>
+                    </li>
+                    <li>
+                        <strong class="text-umsi-blue text-lg block mb-2">What if they don’t respond?</strong>
+                        <p>Follow up once a week later. If no reply, move on and try the next person.</p>
+                    </li>
+                    <li>
+                        <strong class="text-umsi-blue text-lg block mb-2">How do I prepare for a chat?</strong>
+                        <p>Read their profile, skim a project or talk, and bring 3–4 questions (TIARA is a good guide).</p>
+                    </li>
+                    <li>
+                        <strong class="text-umsi-blue text-lg block mb-2">How do I maintain the connection?</strong>
+                        <p>Send a short thank-you, connect on LinkedIn, and share an update in 4–8 weeks.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-umsi-blue text-white py-8" aria-label="UMSI Career Development Footer">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <p class="mb-2">University of Michigan School of Information</p>
+                    <p class="text-sm text-white/80">432 South State Street, Ann Arbor, MI 48109-1285</p>
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/umsicdo/" class="text-white hover:text-umsi-maize transition-colors" aria-label="Facebook">
+                        <i class="fa fa-facebook-square text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/UMSICareers" class="text-white hover:text-umsi-maize transition-colors" aria-label="Twitter">
+                        <i class="fa fa-twitter-square text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" class="text-white hover:text-umsi-maize transition-colors" aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+      
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> UMSI Career Development Office | <a href="https://umich.instructure.com/courses/137916" class="text-umsi-maize hover:underline">UMSI Career Development Office</a></p>
+        </div>
+      
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Mobile menu toggle functionality
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for fade-in elements
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('animate-fade-in');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

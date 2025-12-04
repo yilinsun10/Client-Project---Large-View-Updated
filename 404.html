@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="bg-umsi-gray text-umsi-darkGray font-sans antialiased">
+    <header class="bg-umsi-blue text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" 
+                         class="w-20 h-auto object-contain">
+                    <h1 class="text-xl md:text-2xl font-bold hidden md:block">UMSI Career Hub</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 text-center">
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-umsi-blue mb-4">
+                Oops! We couldn’t find that page.
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+                Sorry, the page you're looking for might have been moved or deleted. But don’t worry, you’re not lost!
+            </p>
+            
+            <div class="mb-6">
+                <a href="index.html" class="bg-umsi-maize text-umsi-blue px-6 py-3 rounded-lg font-semibold hover:bg-white transition-colors duration-300">
+                    <i class="fa fa-home"></i> Go to Homepage
+                </a>
+            </div>
+            
+            <p class="text-lg text-gray-600 mb-6">
+                Or explore some of our popular sections:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="resume.html" class="bg-umsi-lightBlue text-umsi-darkGray p-6 rounded-lg hover:bg-umsi-blue hover:text-white transition-colors">
+                    <i class="fa fa-file-text-o text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold">Resumes</h3>
+                    <p>Get tips on creating a standout resume.</p>
+                </a>
+                
+                <a href="networking.html" class="bg-umsi-lightBlue text-umsi-darkGray p-6 rounded-lg hover:bg-umsi-blue hover:text-white transition-colors">
+                    <i class="fa fa-users text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold">Networking</h3>
+                    <p>Learn how to build meaningful connections.</p>
+                </a>
+            </div>
+
+            <p class="mt-6 text-lg">
+                Still need help? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" 
+                                                target="_blank" class="text-umsi-blue hover:text-[#002244] font-medium">talk to a Career Coach</a> for personalized assistance.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-umsi-blue text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <p class="mb-2">University of Michigan School of Information</p>
+                    <p class="text-sm text-white/80">432 South State Street, Ann Arbor, MI 48109-1285</p>
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/umsicdo/" class="text-white hover:text-umsi-maize transition-colors" aria-label="Facebook">
+                        <i class="fa fa-facebook-square text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/UMSICareers" class="text-white hover:text-umsi-maize transition-colors" aria-label="Twitter">
+                        <i class="fa fa-twitter-square text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" class="text-white hover:text-umsi-maize transition-colors" aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> UMSI Career Development Office | <a href="https://umich.instructure.com/courses/137916" class="text-umsi-maize hover:underline">UMSI Career Development Office</a></p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    // Set the current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
